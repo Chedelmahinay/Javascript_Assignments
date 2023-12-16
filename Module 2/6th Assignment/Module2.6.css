@@ -1,0 +1,11 @@
+.dice-results-list {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.dice-roll-item {
+  width: calc(100% / 3);
+  list-style-type: disc;
+}
