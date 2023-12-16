@@ -12,7 +12,7 @@ const houseName = houses[getRandomNum(0, 3)];
 
 const Name = prompt("Who are you? ");
 const Reveal = document.querySelector(".result");
-// showName.innerHTML = `<p>${wizName}, you are ${houseName}.</p>`
+
 const randonNum = getRandomNum(0, 3);
 console.log(randonNum);
 switch (randonNum) {

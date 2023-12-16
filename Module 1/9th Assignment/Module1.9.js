@@ -1,20 +1,15 @@
 const userNumber = 1;
 
 const checkIfPrime = (inputNumber) => {
-  let divisorList = [];
   if (inputNumber <= 1) {
     return `${inputNumber} is not a prime number`;
   } else {
-    for (let i = 2; i <= inputNumber; i++) {
+    for (let i = 2; i < inputNumber; i++) {
       if (inputNumber % i === 0) {
-        divisorList.push(inputNumber);
+        return `${inputNumber} is not a prime number`;
       }
     }
-    if (divisorList.length > 1) {
-      return `${inputNumber} is not a prime number`;
-    } else {
-      return `${inputNumber} is a prime number`;
-    }
+    return `${inputNumber} is a prime number`;
   }
 };
 
